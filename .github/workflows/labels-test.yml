@@ -20,7 +20,7 @@ jobs:
       labels-assigned: ${{ steps.action-assign-labels.outputs.labels-assigned }}
       labels-removed: ${{ steps.action-assign-labels.outputs.labels-removed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
